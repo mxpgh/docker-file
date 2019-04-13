@@ -27,7 +27,7 @@ else
 fi
 
 docker load < ${basepath}/pt-104.tar
-docker run -idt --name ${cn} pt-104:v1.0 /bin/sh
+docker run -idt --restart=always --name ${cn} pt-104:v1.0 /bin/sh
 
 
 
